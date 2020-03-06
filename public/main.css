@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    background-color: rgba(219, 218, 218, 0.411);
+    font-family: 'Antic', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: black
+}
+
+#headerWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#header {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    width: 80vw;
+    border-radius: 25px;
+    box-shadow: 0px 8px 10px -10px black;
+}
+
+#headerText {
+    font-size: 7.5vw;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.199);
+}
+
+#midWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#midSection {
+    display: flex;
+
+}
+
+#sidebar {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 60vh;
+    margin-right: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0px 8px 10px -10px black;
+    overflow-y: scroll;
+}
+
+.prettyText {
+    border: 1px black solid;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+
+
+}
+
+#innerTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 45vh;
+    margin-top: 20px;
+    font-size: 1.5vw;
+}
+
+#listOfPlaces {
+    padding: 0;
+    list-style: none;
+}
+
+#name {
+    text-align: center;
+    text-decoration: black underline;
+}
+
+#mapid {
+    height: 63.5vh;
+    width: 55vw;
+}
+
+#commentWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#comments {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    margin-top: 20px;
+    width: 80vw;
+    border-radius: 25px;
+    box-shadow: 0px 8px 10px -10px black;
+
+}
+
+/* --------------------------------------------Footer Section--------------------------------------------------- */
+
+#footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    background-color: #D0CACA;
+    margin-top: 50px;
+    width: 100vw;
+    align-self: flex-end;
+}
+
+#footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    width: auto;
+}
+
+#footerTitle {
+    margin-top: 40px;
+}
+
+#textBox {
+    min-height: 8rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+#sendMessage {
+    margin-top: .1rem;
+}
+
+#formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#firstLastName {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+#firstName {
+    margin-right: 10px;
+    resize: none;
+}
+
+#email {
+    resize: none;
+}
+
+#bottomRow {
+    display: flex;
+}
+
+#contentHeader {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vw;
+    margin-left: 1rem;
+}
+
+#contactTableWrapper {
+    display: flex;
+}
+
+#contactColumLeft {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+#contactColumRight {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon {
+    vertical-align: middle;
+    width: .9rem;
+    height: .9rem;
+}
+
+.contact-item {
+    margin: 5px
+}
