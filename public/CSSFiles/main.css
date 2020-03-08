@@ -39,7 +39,6 @@ body {
 
 #midSection {
     display: flex;
-
 }
 
 #sidebar {
@@ -47,12 +46,15 @@ body {
     display: flex;
     flex-direction: column;
     width: 20vw;
-    height: 60vh;
+    max-height: 63.5vh;
     margin-right: 20px;
     border-radius: 25px;
-    padding: 10px;
     box-shadow: 0px 8px 10px -10px black;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow-y: scroll;
+    
 }
 
 .prettyText {
@@ -61,7 +63,6 @@ body {
     margin: 5px;
     border-radius: 10px;
 
-
 }
 
 #innerTextWrapper {
@@ -69,8 +70,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     min-height: 45vh;
-    margin-top: 20px;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+    padding-top: 20px;
+    overflow-y: scroll;
+
 }
 
 #listOfPlaces {
