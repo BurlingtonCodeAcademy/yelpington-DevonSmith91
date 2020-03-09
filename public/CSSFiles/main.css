@@ -6,7 +6,7 @@ body {
 
 .link {
     text-decoration: none;
-    color: black
+    color: rgb(255, 255, 255)
 }
 
 #headerWrapper {
@@ -17,18 +17,21 @@ body {
 }
 
 #header {
-    border: 1px solid rgba(0, 0, 0, 0.329);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 900;
     height: 10vw;
     width: 80vw;
     border-radius: 25px;
-    box-shadow: 0px 8px 10px -10px black;
+    box-shadow: 0px 12px 15px -10px black;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
 }
 
 #headerText {
     font-size: 7.5vw;
+    color: white;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.199);
 }
 
@@ -42,19 +45,20 @@ body {
 }
 
 #sidebar {
-    border: 1px solid rgba(0, 0, 0, 0.329);
     display: flex;
     flex-direction: column;
     width: 20vw;
     max-height: 63.5vh;
     margin-right: 20px;
     border-radius: 25px;
-    box-shadow: 0px 8px 10px -10px black;
+    box-shadow: 0px 12px 15px -10px black;
     overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
     overflow-y: scroll;
-    
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+    color: white;
 }
 
 .prettyText {
@@ -62,7 +66,15 @@ body {
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+    text-align: center;
+    transition: 1s ease;
+}
 
+.prettyText:hover {
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(248, 165, 109) 83%);
 }
 
 #innerTextWrapper {
@@ -73,17 +85,17 @@ body {
     font-size: 1.2vw;
     padding-top: 20px;
     overflow-y: scroll;
-
 }
 
 #listOfPlaces {
     padding: 0;
     list-style: none;
+    
 }
 
 #name {
     text-align: center;
-    text-decoration: black underline;
+    text-decoration: white underline;
 }
 
 #mapid {
@@ -104,8 +116,9 @@ body {
     margin-top: 20px;
     width: 80vw;
     border-radius: 25px;
-    box-shadow: 0px 8px 10px -10px black;
-
+    box-shadow: 0px 12px 15px -10px black;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
 }
 
 /* --------------------------------------------Footer Section--------------------------------------------------- */
