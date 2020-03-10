@@ -22,17 +22,10 @@ let htmlHours = document.getElementById('hours')
 
 
 async function locationDetails() {
-    let restaurantDetails = await fetch(`https://json-server.burlingtoncodeacademy.now.sh/restaurants/${id}`)
-        .then((response) => {
-            return response.json()
-        }).then((jsonObj) => {
-            return jsonObj
-        })
-
-    fetch(`/api/${id}.json`)
+    let restaurantDetails = await fetch(`/api/${id}.json`)
         .then(res => res.json())
         .then((jsonObject) => {
-            console.log(jsonObject)
+            return jsonObject
         })
 
     htmlName.textContent = restaurantDetails.name
@@ -55,20 +48,6 @@ async function locationDetails() {
 }
 
 locationDetails()
-
-
-// Pulling from custom API
-
-// fetch(`/api/${id}.json`)
-//     .then(res => res.json())
-//     .then((jsonRes) => {
-//         displayName.innerText = jsonRes.name
-//         fetch('nominatium website using jsonRes.address')
-//             .then(res => res.jason())
-//             .then((res) => {
-//                 //do the things with the stuff.
-//             })
-//     })
 
 
 // // saving local storage

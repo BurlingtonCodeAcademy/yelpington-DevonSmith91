@@ -33,7 +33,7 @@ async function locationDetails() {
 			idList.forEach((id) => {
 				let dirtyName = id.split('-').join(' ')
 				let name = titleize(dirtyName)
-				listOfPlaces.innerHTML += `<p class='prettyText'><a class='link' href='/restaurant?${id}'>${name}</a></p>`
+				listOfPlaces.innerHTML += `<p class='prettyText'><a class='sideLink' href='/restaurant?${id}'>${name}</a></p>`
 				fetch(`./api/${id}.json`)
 					.then(res => res.json())
 					.then((restInfo) => {

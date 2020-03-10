@@ -4,10 +4,12 @@ body {
     font-family: 'Antic', sans-serif;
 }
 
-.link {
+.headerLink {
     text-decoration: none;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    padding: 10px;
 }
+
 
 #headerWrapper {
     display: flex;
@@ -61,8 +63,13 @@ body {
     color: white;
 }
 
-.prettyText {
-    border: 1px black solid;
+.sideLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px rgba(0, 0, 0, 0.452) solid;
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
@@ -70,9 +77,11 @@ body {
     background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
     text-align: center;
     transition: 1s ease;
+
 }
 
-.prettyText:hover {
+
+.sideLink:hover {
     background: rgb(205, 24, 24);
     background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(248, 165, 109) 83%);
 }
@@ -111,7 +120,7 @@ body {
 #comments {
     border: 1px solid rgba(0, 0, 0, 0.329);
     display: flex;
-    align-items: center;
+    justify-content: center;
     height: 30vh;
     margin-top: 20px;
     width: 80vw;
@@ -119,6 +128,13 @@ body {
     box-shadow: 0px 12px 15px -10px black;
     background: rgb(205, 24, 24);
     background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+}
+
+#commentsTitle {
+    color: white;
+    font-size: 2vw;
+    text-decoration: white underline;
+
 }
 
 /* --------------------------------------------Footer Section--------------------------------------------------- */
@@ -225,4 +241,21 @@ body {
 
 .contact-item {
     margin: 5px
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    border: 1px solid;
+    border-color: black;
+    text-decoration: none;
+
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: black;
 }
