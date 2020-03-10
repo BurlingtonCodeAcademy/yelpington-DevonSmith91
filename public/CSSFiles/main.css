@@ -1,9 +1,11 @@
+/* Overall Body CSS */
 body {
     margin: 0;
     background-color: rgba(219, 218, 218, 0.411);
     font-family: 'Antic', sans-serif;
 }
 
+/* Header CSS */
 .headerLink {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -37,6 +39,8 @@ body {
     text-shadow: 3px 3px rgba(0, 0, 0, 0.199);
 }
 
+/* Styling for Mid Section */
+
 #midWrapper {
     display: flex;
     justify-content: center;
@@ -45,6 +49,8 @@ body {
 #midSection {
     display: flex;
 }
+
+/* Side Bar CSS */
 
 #sidebar {
     display: flex;
@@ -102,16 +108,14 @@ body {
     
 }
 
-#name {
-    text-align: center;
-    text-decoration: white underline;
-}
+/* Map CSS */
 
 #mapid {
     height: 63.5vh;
     width: 55vw;
 }
 
+/* Comments Section */
 #commentWrapper {
     display: flex;
     justify-content: center;
