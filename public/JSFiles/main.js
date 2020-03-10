@@ -25,32 +25,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let listOfPlaces = document.getElementById('listOfPlaces')
 
 async function locationDetails() {
-	// Fetch the data for all restaurants
-	let fullDetails = await fetch('https://json-server.burlingtoncodeacademy.now.sh/restaurants')
-		.then((response) => {
-			return response.json()
-		}).then((jsonObj) => {
-			return jsonObj
-		})
-
-	// Create a link to each restaurant
-	fullDetails.forEach((place) => {
-		let location = place.address
-		let name = place.name
-		let id = place.id
-		listOfPlaces.innerHTML += `<p class='prettyText'><a class='link' href='/restaurant?${id}'>${name}</a></p>`
-		// Fetch information based on individual locations
-		fetch(`https://nominatim.openstreetmap.org/search/?q=${location}&format=json`).then((data) => {
-			return data.json()
-		}).then((jsonObj) => {
-			let shops = jsonObj[0]
-			let lat = shops.lat
-			let lon = shops.lon
-			// Drop a pin at the location on the map with a link in the popup
-			L.marker([lat, lon]).addTo(myMap).bindPopup(`<a href='/restaurant?${id}'>${name}</a>`)
-		})
-	})
-
 	fetch('./api/all.json')
 		.then((res) => {
 			return res.json()

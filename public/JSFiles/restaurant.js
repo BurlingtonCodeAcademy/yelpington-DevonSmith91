@@ -20,12 +20,19 @@ let htmlPhone = document.getElementById('phone')
 let htmlAddress = document.getElementById('address')
 let htmlHours = document.getElementById('hours')
 
+
 async function locationDetails() {
     let restaurantDetails = await fetch(`https://json-server.burlingtoncodeacademy.now.sh/restaurants/${id}`)
         .then((response) => {
             return response.json()
         }).then((jsonObj) => {
             return jsonObj
+        })
+
+    fetch(`/api/${id}.json`)
+        .then(res => res.json())
+        .then((jsonObject) => {
+            console.log(jsonObject)
         })
 
     htmlName.textContent = restaurantDetails.name
@@ -44,11 +51,6 @@ async function locationDetails() {
         L.marker([lat, lon]).addTo(myMap)
     })
 
-    // fetch(`/api/${id}.json`)
-    //     .then(res => res.json())
-    //     .then((jsonRes) => {
-    //         console.log(jsonRes)
-    //     })
 
 }
 
