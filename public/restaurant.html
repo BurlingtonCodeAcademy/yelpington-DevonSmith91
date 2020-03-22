@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yelpington</title>
+  <!-- Linking Map Information -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <!-- Linking Custom Font -->
+  <link href="https://fonts.googleapis.com/css?family=Antic&display=swap" rel="stylesheet">
+  <!-- Linking CSS page -->
+  <link rel="stylesheet" href="./CSSFiles/main.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div id='headerWrapper'>
+    <div id='header'>
+      <!-- Turn header into a link back to home page -->
+      <div id='headerText'> <a href="index.html" class='headerLink'> Yelp...ington!!</a></div>
+    </div>
+  </div>
+  <!-- Middle section mostly for formatting -->
+  <div id='midWrapper'>
+    <div id='midSection'>
+      <!-- Sidebar -->
+    <div id='sidebar'>
+      <div id='innerTextWrapper'>
+        <!-- breakdown of sidebar items -->
+        <div id='name'>          
+        </div>
+        <br>
+        <div id='notes'>
+        </div>
+        <div id='phone'>
+        </div>
+        <div id='address'>
+        </div>
+        <div id='hours'>
+        </div>
+      </div>
+    </div>
+    <!-- Map section -->
+    <div id='mapWrapper'>
+      <!-- div to hold the map -->
+      <div id='mapid'>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Comments section -->
+  <div id='commentWrapper'>
+    <div id='comments'>
+      <div id='commentsTitle'>Comments:</div>
+      <div id='userInfo'>
+      <div class='userName'>Joe Bob</div>
+      <br>
+      <div class='userComments'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ut?</div>
+      <br>
+      <div class='userName'>Jane Doe</div>
+      <br>
+      <div class='userComments'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum dignissimos totam ab eum temporibus </div>
+    </div>
+    </div>
+  </div>
+  <!-- Footer section -->
+  <div id="footer">
+    <div id="footerTitle">QUESTIONS OR COMMENTS? <strong>GET IN TOUCH</strong></div>
+    <div id="footerWrapper">
+      <!-- User Input Section -->
+      <div id="formDiv">
+        <div id="firstLastName">
+          <textarea type="text" placeholder="Name" id="firstName"></textarea>
+          <textarea type="text" placeholder="Email" id="email"></textarea>
+        </div>
+        <textarea id="textBox" placeholder="Message"></textarea>
+        <div id="bottomRow">
+          <a href="#" class='buttonLink'>
+            <div id='sendMessage' class="button">SEND MESSAGE</div>
+          </a>
+          <div></div>
+        </div>
+      </div>
+      <!-- Contact Information Section -->
+      <div id="contactInfo">
+        <div id="contentHeader">Cum, voluptatem. Lorem ipsum dolor sit amet. Lorem, ipsum. ipsum dolor sit amet,
+          consectetur adipisicing elit. Nesciunt, cupiditate. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Sed, dolorem!</div>
+        <div id="contactTableWrapper">
+          <div id="contactColumLeft">
+            <div class="contact-item"> <img class="icon" src="./icons/home.png" alt="Address">
+              1234 Somewhere Road
+              Burlington VT, 05401 <br>
+              USA</div>
+            <div class="contact-item"><img class="icon" src="./icons/phone.png" alt="Phone Number">
+              (000) 000-0000</div>
+            <div class="contact-item"><img class="icon" src="./icons/email.png" alt="Email">
+              info@untitled.id</div>
+          </div>
+          <div id="contactColumRight">
+            <div class="contact-item"> <img class="icon" src="./icons/twitter.png" alt="twitter">
+              @untitled</div>
+            <div class="contact-item"><img class="icon" src="./icons/instagram.png" alt="instagram">
+              instagram.com</div>
+            <div class="contact-item"><img class="icon" src="./icons/dribbble.png" alt="dribbble">
+              dribbble.com</div>
+            <div class="contact-item"><img class="icon" src="./icons/facebook.png" alt="facebook">
+              facebook.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- JS Script -->
+  <script src="./JSFiles/restaurant.js"></script>
+</body>
+
+</html>

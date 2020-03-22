@@ -1,0 +1,12 @@
+{
+    "id": "leunigs-bistro",
+    "name": "Leunig's Bistro",
+    "address": "115 Church Street, Burlington Vermont 05401",
+    "phone": "863-3759",
+    "website": "https://www.leunigsbistro.com/",
+    "hours": "Mon-Thurs 8a.m. - 6p.m., Fri and Sat 8a.m. - 10p.m.,  Sunday 8p.m. - 6p.m.",
+    "notes": [
+      "Leunig's Bistro is one of the oldest, continually operating restaurants in downtown Burlington.",
+      "A French bistro & bar, serving lunch, brunch and dinner."
+    ]
+  }

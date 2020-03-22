@@ -1,0 +1,278 @@
+/* Overall Body CSS */
+body {
+    margin: 0;
+    background-color: rgba(219, 218, 218, 0.411);
+    font-family: 'Antic', sans-serif;
+}
+
+/* Header CSS */
+.headerLink {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+#headerWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    height: 10vw;
+    width: 80vw;
+    border-radius: 25px;
+    box-shadow: 0px 12px 15px -10px black;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+}
+
+#headerText {
+    font-size: 7.5vw;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.199);
+}
+
+/* Styling for Mid Section */
+
+#midWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#midSection {
+    display: flex;
+}
+
+/* Side Bar CSS */
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    max-height: 63.5vh;
+    margin-right: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 12px 15px -10px black;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+    color: white;
+}
+
+.sideLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px rgba(0, 0, 0, 0.452) solid;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+    text-align: center;
+    transition: 1s ease;
+
+}
+
+
+.sideLink:hover {
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(248, 165, 109) 83%);
+}
+
+#innerTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 45vh;
+    font-size: 1.2vw;
+    padding-top: 20px;
+    overflow-y: scroll;
+}
+
+#listOfPlaces {
+    padding: 0;
+    list-style: none;
+    
+}
+
+/* Map CSS */
+
+#mapid {
+    height: 63.5vh;
+    width: 55vw;
+}
+
+/* Comments Section */
+#commentWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#comments {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    margin-top: 20px;
+    width: 80vw;
+    border-radius: 25px;
+    box-shadow: 0px 12px 15px -10px black;
+    background: rgb(205, 24, 24);
+    background: radial-gradient(circle, rgb(218, 40, 40) 0%, rgb(245, 103, 9) 83%);
+}
+
+#commentsTitle {
+    display: flex;
+    color: white;
+    font-size: 2vw;
+    text-decoration: white underline;
+    
+}
+
+#userInfo {
+    color: white;
+    width: 80vw;
+    padding-left: 5vw;
+}
+
+.userName {
+    font-size: 1.5vw;
+    text-decoration: underline white;
+}
+
+/* --------------------------------------------Footer Section--------------------------------------------------- */
+
+#footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    background-color: #D0CACA;
+    margin-top: 50px;
+    width: 100vw;
+    align-self: flex-end;
+}
+
+#footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    width: auto;
+}
+
+#footerTitle {
+    margin-top: 40px;
+}
+
+#textBox {
+    min-height: 8rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+#sendMessage {
+    margin-top: .1rem;
+}
+
+#formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#firstLastName {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+#firstName {
+    margin-right: 10px;
+    resize: none;
+}
+
+#email {
+    resize: none;
+}
+
+#bottomRow {
+    display: flex;
+}
+
+#contentHeader {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vw;
+    margin-left: 1rem;
+}
+
+#contactTableWrapper {
+    display: flex;
+}
+
+#contactColumLeft {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+#contactColumRight {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon {
+    vertical-align: middle;
+    width: .9rem;
+    height: .9rem;
+}
+
+.contact-item {
+    margin: 5px
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    border: 1px solid;
+    border-color: black;
+    text-decoration: none;
+
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: black;
+}
